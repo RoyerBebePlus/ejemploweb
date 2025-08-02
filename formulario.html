@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Nombre</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f2f6fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .formulario {
+            background: #ffffff;
+            padding: 2rem 3rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .formulario h2 {
+            margin-bottom: 1.5rem;
+            color: #333;
+            text-align: center;
+        }
+        .formulario input[type="text"] {
+            width: 100%;
+            padding: 0.7rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        .formulario input[type="submit"] {
+            width: 100%;
+            padding: 0.7rem;
+            background-color: #4a90e2;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .formulario input[type="submit"]:hover {
+            background-color: #357bd8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="formulario">
+    <h2>Ingresa tu nombre</h2>
+    <form action="http://localhost:8080/miservlet1" method="GET">
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+</body>
+</html>
